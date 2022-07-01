@@ -93,11 +93,9 @@ body {
   margin-right: 50px;
 }
 
-
 .contact {
   display: flex;
   margin-left: auto;
-
 }
 
 .nav .logo {
@@ -370,15 +368,48 @@ header {
   background-color: var(--accent-colour);
 }
 
+/* постійні клієнти */
 
+.clients-list {
+  fill: #AFB1B8;
+  display: flex;
+  justify-content: space-between;
+}
 
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+.clients-item > a {
+  width: 100%;
+  height: 100%;
 
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.clients-item > a:hover,
+.clients-item > a:focus {
+  fill: var(--accent-colour);
+  border: 1px solid var(--accent-colour);
+}
 
 
 /* footer */
 footer {
   background-color: var(--secondary-background);
   padding: 60px 0;
+}
+
+.footer-box {
+  display: flex;
+}
+.footer-contacts {
+  margin-right: 70px;
 }
 
 .address {
@@ -400,6 +431,62 @@ footer {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-colour);
+}
+
+.footer-stbox {
+  margin-top: 12px;
+}
+
+.footer-stbox strong {
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+
+}
+
+.footer-list{
+  display: flex;
+}
+
+.footer-social {
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-white-color);
+
+  margin-top: 20px;
+}
+
+.footer-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  background-color: var(--accent-colour);
+}
+
+/* .team-link > ul {
+  display: flex;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-bottom: 30px;
+}
+
+.team-social:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* portfolio */
@@ -436,6 +523,10 @@ footer {
 .button-filter:focus {
   color: var(--main-background);
   background-color: var(--accent-colour);
+
+  box-shadow: 0px 2px 2px 0px #0000001F;
+  box-shadow: 0px 1px 2px 0px #00000014;
+  box-shadow: 0px 3px 1px 0px #0000001A;
 }
 /* < !-- Елементи фільтру --> */
 
@@ -450,6 +541,11 @@ footer {
   margin-bottom: 30px;
   width: calc((100% - 60px) / 3);
   /* gap: 30px; */
+}
+
+.project-items> li:hover {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  ;
 }
 
 .project-items> li:nth-child(3n) {
