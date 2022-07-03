@@ -407,6 +407,7 @@ footer {
 
 .footer-box {
   display: flex;
+  align-items: baseline;
 }
 .footer-contacts {
   margin-right: 70px;
@@ -433,27 +434,21 @@ footer {
   color: var(--accent-colour);
 }
 
-.footer-stbox {
-  margin-top: 12px;
-}
-
 .footer-stbox strong {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
-
 }
 
 .footer-list{
   display: flex;
+  margin-top: 20px;
 }
 
 .footer-social {
   width: 44px;
   height: 44px;
   fill: var(--primary-white-color);
-
-  margin-top: 20px;
 }
 
 .footer-social:not(:last-child) {
@@ -543,7 +538,12 @@ footer {
   /* gap: 30px; */
 }
 
-.project-items> li:hover {
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 4px 4px 0px #00000040;
   ;
 }
